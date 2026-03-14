@@ -8,6 +8,7 @@ const abi = [
   "function getTransactionCount(bool,bool) view returns(uint256)",
   "function transactions(uint256) view returns(address destination,uint256 value,bytes data,bool executed)",
   "function getConfirmationCount(uint256) view returns(uint256)",
+  "function confirmations(uint256,address) view returns(bool)",
   "function required() view returns(uint256)",
 ];
 let provider;
