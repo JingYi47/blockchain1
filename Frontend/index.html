@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>MultiSig Wallet DApp</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Multi-Signature Wallet DApp</h1>
+
+      <p>Ethereum Smart Contract Project • Group 10</p>
+    </header>
+
+    <div class="container">
+      <div class="card">
+        <h2>Connect Wallet</h2>
+
+        <button onclick="connectWallet()">Connect MetaMask</button>
+
+        <div class="wallet-info">
+          <p id="address">Address: -</p>
+
+          <p id="balance">Balance: -</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h2>Submit Transaction</h2>
+
+          <input id="to" placeholder="Receiver Address" />
+
+          <input id="amount" placeholder="ETH Amount" />
+
+          <button onclick="submitTransaction()">Submit Transaction</button>
+        </div>
+
+        <div class="card">
+          <h2>Confirm Transaction</h2>
+
+          <input id="txid" placeholder="Transaction ID" />
+
+          <button onclick="confirmTransaction()">Confirm</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Execute Transaction</h2>
+
+        <button onclick="executeTransaction()">Execute Transaction</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>Blockchain Ethereum • MultiSig Wallet • Group 10</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
